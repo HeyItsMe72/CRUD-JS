@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registros CRUD</title>
+    <link rel="stylesheet" href="./syles.css">
+</head>
+<body>
+    <section>
+        <article class="create">
+            <h1 class="title">Software de Registro de Historias Clínicas</h1> 
+            <hr>
+            <form class="create-form">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name" required autocomplete="off"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
+                title="Debe contener de 5 - 50 caracteres usando sólo letras y espacios en blanco">
+                <label for="dir">Dirección:</label>
+                <input type="text" name="dir" id="dir" required autocomplete="off">
+                <label for="tel">Teléfono:</label>
+                <input type="tel" name="tel" id="tel" required autocomplete="off"
+                pattern="\d{9,12}" 
+                title="Solo pueden incluirse de 9 a 12 números únicamente">
+                <label for="age">Edad:</label>
+                <input type="number" name="age" id="age" required autocomplete="off"
+                pattern="\d{1,3}"
+                title="Debe contener de 1 - 3 caracteres utilizando sólo números">
+                <label for="gen">Género:</label>
+                <select name="gen" id="gen" required>
+                    <option value="">--Seleccionar</option>
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                    <option value="NS">No Seleccionar</option>
+                </select>                
+                <label for="diag">Diagnóstico:</label>
+                <input type="text" name="diag" id="diag" required autocomplete="off">
+                <label for="obs">Observaciones:</label>
+                <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+                <label for="date">Fecha:</label>
+                <input type="date" name="date" id="date" readonly>
+                <input type="submit" value="Guardar" class="button">
+            </form>
+        </article>
+        <article class="results-section">
+            <h2 class="title">Tabla de Registros de Historias Clínicas</h2>
+            <hr>
+                <input type="search" class="search" placeholder="🔎 Buscar">
+                <select name="type-of-search" id="type-of-search">
+                    <option value="name">Nombre</option>
+                    <option value="date">Fecha</option>
+                    <option value="tel">Teléfono</option>
+                    <option value="gen">Género</option>
+                    <option value="age">Edad</option>
+                </select>            
+            <table class="crud-table">
+                <thead>
+                    <tr class="head-table">
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Fecha</th>
+                        <th>Diagnóstico</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </article>
+        <footer>This site was made only for Education Purposes by 
+            <a href="#">Lucia Esteves</a> &copy;2023
+        </footer>
+    </section>
+    <template id="crud-template">
+        <tr class="register">
+            <td class="name"></td>
+            <td class="dir"></td>
+            <td class="tel"></td>
+            <td class="age"></td>
+            <td class="gen"></td>
+            <td class="date"></td>
+            <td class="diag"></td>
+            <td class="obs"></td>
+            <td>
+                <button class="update">✏️</button>
+                <button class="delete">🗑️</button>
+            </td>
+        </tr>
+    </template>
+
+    <script src="index.js"></script>
+</body>
+</html>

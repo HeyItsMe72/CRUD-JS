@@ -1,0 +1,190 @@
+html, body, *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(247, 232, 192);
+}
+
+footer {
+  padding: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+/*form*/
+
+input, select {
+  padding: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+select{
+  background-color: beige;
+}
+
+
+.create {
+  width: 100%;
+}
+
+.create-form {
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+
+  /* grid creation*/
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.create-form label {
+  margin: auto 0;
+}
+
+.title {
+  text-align: center;
+  padding: 3rem;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  font-size: 2rem;
+  background-color: bisque;
+}
+
+/*Registers*/
+.title {
+  padding-bottom: .5em;
+}
+
+hr {
+  margin-bottom: 2rem;
+  height: 0.1rem;
+  max-width: 100%;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 0, 119), rgba(0, 0, 0, 0));
+}
+
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  border: 3px solid aqua;
+  margin-left: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+}
+
+thead th:nth-child(1) {
+  width: 20%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+thead th:nth-child(4) {
+  width: 10%;
+}
+
+thead th:nth-child(5) {
+  width: 12%;
+}
+
+thead th:nth-child(6) {
+  width: 20%;
+}
+
+thead th:nth-child(7) {
+  width: 35%;
+}
+
+thead th:nth-child(8) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+
+thead {
+  background-color: aquamarine;
+}
+
+.editable {
+  background-color: rgba(255, 255, 0, 0.667);
+  text-align: center;
+}
+
+.delete, .update {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  transition: all .5s ease;
+}
+
+.delete:hover, .update:hover {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.delete:hover {
+  background-color: rgba(255, 0, 0, 0.756);
+}
+
+
+.update:hover {
+  background-color: rgba(255, 255, 0, 0.81);
+}
+
+.results-section {
+  text-align: center;
+}
+
+.register {
+  text-align: center;
+  background-color: rgba(127, 255, 212, 0.361);
+}
+
+.register-editable {
+  background-color: rgba(255, 255, 0, 0.667);
+}
+
+.delete-register {
+  background-color: rgba(255, 0, 0, 0.667);
+}
+
+/*Search Filter*/
+.filter {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .create-form {
+    grid-template-columns: 200px 1fr;
+  }
+}
