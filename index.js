@@ -103,8 +103,7 @@ d.addEventListener("submit", e => {
         $genSelected = $gen.options[$gen.selectedIndex].value,
         $inputDiag = d.querySelector("input[name = 'diag']").value,
         $textObs = d.getElementById("obs").value;
-        console.log(typeof $inputTel);
-        console.log($textObs);
+
         if (allValidations($inputName, $inputDir, $inputTel, $inputAge, $genSelected, $inputDiag, $textObs))
             ajax({
                 url: "http://localhost:3000/pacientes",
@@ -126,7 +125,7 @@ d.addEventListener("submit", e => {
     }
 })
 
-//DELETE a register and identify the register column of the table for the an update
+//DELETE a register and identify the register column of the table for an update
 d.addEventListener("click", e => {
     if (e.target.tagName === "TR" || e.target.tagName === "TD") {
         if (!e.target.parentElement.matches(".head-table")) {

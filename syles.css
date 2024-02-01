@@ -80,7 +80,6 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 0, 119), rgba(0, 0, 0, 0));
 }
 
-
 table {
   table-layout: fixed;
   width: 90%;
@@ -104,11 +103,11 @@ thead th:nth-child(3) {
 }
 
 thead th:nth-child(4) {
-  width: 10%;
+  width: 15%;
 }
 
 thead th:nth-child(5) {
-  width: 12%;
+  width: 15%;
 }
 
 thead th:nth-child(6) {
@@ -126,6 +125,7 @@ thead th:nth-child(8) {
 th,
 td {
   padding: 20px;
+  overflow-wrap: anywhere;
 }
 
 thead {
