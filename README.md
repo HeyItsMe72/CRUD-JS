@@ -81,3 +81,6 @@ Esta función verifica el contenido de los inputs de acuerdo al tipo (string, nu
 Debido a que los datos son mostrados en una tabla, la visualización de los resultados en celulares es poco atractiva. Se recomienda mejorar el diseño respinsivo en la tabla de resultados, agregando, como opción, un scroll en este contenedor que permita visualizar mejor los datos. 
 
 Otra buena implementación sería validar el contenido de la tabla al actualizar los campos de los registroas, reutilizando las funciones de validación globales. Hasta ahora, las validaciones en la tabla se limitan a no dejar campos vacíos. 
+
+
+Los íconos utilizados pueden ser encontrados en: [Flaticon](https://www.flaticon.com/)
