@@ -32,6 +32,17 @@
       "diagnosis": "Artritis",
       "comments": "Desinflamatorio, consultar especialista",
       "id": 6
+    },
+    {
+      "name": "Lucía Esteves",
+      "direction": "Calle F",
+      "telphone": "525205555555",
+      "age": "1",
+      "genre": "F",
+      "date": "2024-02-12",
+      "diagnosis": "tos",
+      "comments": "Ibuprofeno, clorfenamina y reposo",
+      "id": 7
     }
   ]
 }
